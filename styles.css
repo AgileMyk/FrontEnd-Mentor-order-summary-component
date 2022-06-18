@@ -146,7 +146,7 @@
     .top-image {
         grid-row: 1 / 2;
         grid-column: 1 / -1;
-        background-image: url('../images/illustration-hero.svg');
+        background-image: url('https://raw.githubusercontent.com/AgileMyk/FrontEnd-Mentor-order-summary-component/08931b95e30b33e3d37fbe4fc12e9b61b4c160f4/illustration-hero.svg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -210,7 +210,7 @@
         height: 60px;
         width: 60px;
         border-radius: 50%;
-        background-image: url('../images/icon-music.svg');
+        background-image: url('https://raw.githubusercontent.com/AgileMyk/FrontEnd-Mentor-order-summary-component/08931b95e30b33e3d37fbe4fc12e9b61b4c160f4/icon-music.svg');
         background-size: cover;
         background-repeat: no-repeat;
     }
