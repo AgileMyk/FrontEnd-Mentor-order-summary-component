@@ -1,0 +1,313 @@
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+}
+
+
+ html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+  }
+
+  h1 {
+    font-size: 1rem;
+    margin: 0.67em 0;
+  }
+
+  
+  small {
+    font-size: 80%;
+  }
+
+  img {
+    border-style: none;
+  }
+ 
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 1 */
+    line-height: 1.15; /* 1 */
+    margin: 0; /* 2 */
+  }
+
+ 
+  button,
+  select { /* 1 */
+    text-transform: none;
+  }
+ 
+  button,
+  [type="button"],
+  [type="reset"],
+  [type="submit"] {
+    -webkit-appearance: button;
+  }
+
+  
+  button::-moz-focus-inner,
+  [type="button"]::-moz-focus-inner,
+  [type="reset"]::-moz-focus-inner,
+  [type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+  }
+ 
+  legend {
+    box-sizing: border-box; /* 1 */
+    color: inherit; /* 2 */
+    display: table; /* 1 */
+    max-width: 100%; /* 1 */
+    padding: 0; /* 3 */
+    white-space: normal; /* 1 */
+  }
+  
+  progress {
+    vertical-align: baseline;
+  }
+
+  ::-webkit-file-upload-button {
+    -webkit-appearance: button; /* 1 */
+    font: inherit; /* 2 */
+  }
+ 
+
+:root {
+ 
+    /*  Color Pallete */
+
+  --farthest-background: hsl(225, 100%, 94%);
+  --top-image-and-btn: hsl(245, 75%, 52%);
+  --plan-bg-color: hsl(225, 100%, 98%);
+  --special-text-color: hsl(224, 23%, 55%);
+  --heading-text-color: hsl(223, 47%, 23%);
+
+    /* typography */
+
+    font-size: 16px;
+    font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
+
+    }
+
+    html {
+      padding: 0;
+    }
+
+    a:hover,
+    a:active {
+      cursor: pointer;
+    }
+
+    body {
+        background: var(--farthest-background);
+        height: 100vh;
+        width: 100vw;
+    }
+  
+    .img {
+      width: 100%;
+      align-self: start;
+      justify-self: start;
+    }
+
+    h2, h4 {
+    color: var(--heading-text-color)
+    }
+
+    p {
+        color: var(--special-text-color)
+    }
+
+    .summary-container {
+        display: grid;
+        height: 700px;
+       /* min-width: 354px;
+        max-width: 400px; */
+        width: clamp(354px, 400px, 20vw);
+        grid-template-rows: 28% 1fr 25%;
+        grid-template-columns: 1fr;
+        border-radius: 20px;
+        position: relative;
+        bottom: 33%;
+        margin: 9.25% 4.5%;
+        background-color: #fff;
+        box-shadow: 2px 16px 34px -14px  hsla(245, 75%, 52%, .4);
+        margin-left: auto;
+        margin-right: auto;
+  
+    }
+
+    .top-image {
+        grid-row: 1 / 2;
+        grid-column: 1 / -1;
+        background-image: url('../images/illustration-hero.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    
+.heading-n-text p {
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+    .summary-details {
+        grid-row: 2 / 3;
+        grid-column: 1 / -1;
+        padding: 0 5%;
+        display: grid;
+        grid-template-rows: 3.05fr 2fr;
+        grid-template-columns: 1fr;
+        
+    }
+
+    .summary-details h2,
+    .summary-details p {
+        margin: 1rem;
+    }
+
+    .heading-n-text {
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+        text-align: center;
+        padding-top: 1.75rem;
+    }
+
+    .plan-details {
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 1.5fr 5fr 2.25fr;
+        grid-template-rows: 1fr;
+        background: var(--plan-bg-color);
+        border-radius: 17.5px;
+    }
+
+    .icon-container {
+        grid-row: 1 / -1;
+        grid-template-columns: 1 / 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1rem;
+    }
+
+    .icon {
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        background-image: url('../images/icon-music.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+
+    .plan-type {
+        grid-row: 1 / -1;
+        grid-template-columns: 2 / 3;
+        text-align: left;
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .plan-type h2 {
+        margin-top:  auto;
+        margin-bottom: 0px;
+        font-size: 1rem;
+        font-weight: 900;
+        margin-bottom: .5rem;
+    }
+
+    .plan-type p {
+        margin-bottom: auto;
+        margin-top: 0px;
+    }
+
+    .change-option {
+        grid-row: 1 / -1;
+        grid-template-columns: 3 / 4;
+        display: flex;
+        margin-top: auto;
+        margin-bottom: auto;
+        font-weight: 600;
+        text-align: left;
+    }
+
+    .change-option a {
+        color: var(--top-image-and-btn);
+    }
+
+    .buttons-section {
+        grid-row: 3 / 4;
+        grid-column: 1 / -1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 7.5% 5% 5%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+     
+    }
+
+    .buttons-section a {
+      text-decoration: none;
+      height: 100%;
+      width: 100%;
+      border-radius: 20px;
+      border: none;
+      grid-column: 1 / 2;
+      background: transparent;
+      color: var(--special-text-color);
+    }
+
+    .buttons-section .btn {
+      height: 100%;
+      width: 100%;
+      border-radius: 20px;
+      border: none;
+      background: transparent;
+    }
+
+    .buttons-section .payment a {
+      color: #fff;
+    }
+
+    .buttons-section .payment {
+      background: var(--top-image-and-btn);
+      width: 100%;
+      color: #fff;
+      border-radius: 20px;
+      border: none;
+      font-weight: 700;
+      box-shadow: 4px 16px 26px -4px  hsla(245, 75%, 52%, .4);
+    }
+
+  .cancel {
+    font-weight: 900;
+
+  }
+
+    .buttons-section a:last-of-type {
+      background: transparent;
+      height: 100%;
+      width: 100%;
+      border-radius: 20px;
+      border: none;
+      display: ;
+    }
