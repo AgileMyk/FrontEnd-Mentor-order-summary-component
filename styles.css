@@ -130,7 +130,7 @@
        /* min-width: 354px;
         max-width: 400px; */
         width: clamp(354px, 400px, 20vw);
-        grid-template-rows: 28% 1fr 25%;
+        grid-template-rows: 28% 1fr 28%;
         grid-template-columns: 1fr;
         border-radius: 20px;
         position: relative;
