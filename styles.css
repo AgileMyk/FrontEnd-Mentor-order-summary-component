@@ -245,11 +245,12 @@
         margin-top: auto;
         margin-bottom: auto;
         font-weight: 600;
-        align-items: center;    
     }
 
     .change-option a {
         color: var(--top-image-and-btn);
+        margin-top: auto;
+        margin-bottom: auto;
     }
 
     .buttons-section {
